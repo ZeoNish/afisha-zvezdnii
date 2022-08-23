@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Онлайн Афиша кинотеатра "Звёздный"</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fix.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+
+</head>
+
+<body>
+
+<header class="header noselect hide">
+    <h1><a href="/">&#9733; Звёздный &#9733;</a></h1>
+    <h2>Онлайн Афиша кинотеатра</h2>
+
+    <br><br> <!-- Вот эту хуйню надо поменять -->
+
+    <h2>&#9733; &#9733; &#9733;</h2>
+</header>
+
+<header class="header svg_logo noselect text-center">
+    <a href="/"><div class="logo"></div></a>
+</header>
+
+<div id="movie" class="grid"></div>
+
+<div class="footer">
+    KrasnKINO.RU © <span class="year"></span>. Все права защищены.
+    Разработчик : <a href="https://vk.com/zeonish" target="_blank">ZeoNish</a>
+</div>
+
+<!-- Modal -->
+<div class="modalcontainer">
+    <div class="flex">
+        <div class="modal">
+            <div class="close" title="Закрыть"><span><i class="fas fa-times"></i></span></div>
+            <div class="content">
+                <div class="movie-card m_background" style="">
+                    <h1 class="m_title"></h1>
+                    <span class="m_runtime" title="Продолжительность"></span>
+                    <span class="m_rating" title="Рейтинг фильма"><i class="fas fa-star"></i></span>
+                    <span class="m_startdate" title="Дата начала показа"><i class="far fa-calendar-alt"></i></span>
+                    <p class="m_synopsis"></p>
+                    <div class="m_time_set noselect">
+                        <h2>Время сеансов</h2>
+                    </div>
+                </div>
+
+                <img class="m_age age" src="" alt="Возраст">
+
+            </div>
+            <div class="buttons">
+                <a>Отмена</a>
+                <a href="#" target="_blank">Купить билет</a>
+            </div>
+            <span class="prev"> <i class="fas fa-chevron-left"></i> </span>
+            <span class="next"> <i class="fas fa-chevron-right"></i> </span>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/script.js"></script>
+
+
+<!-- Заглушка -->
+<div class="splice"></div>
+<!-- Заглушка -->
+
+<!-- Постер -->
+<div class="splice_poster" style="background-image: url('')"></div>
+<!-- Постер -->
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/particles-js.js"></script>
+
+<!-- <script> feather.replace(); </script> -->
+
+</body>
+</html>

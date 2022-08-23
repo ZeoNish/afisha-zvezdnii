@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+
+<div class="container-fluid">
+
+    <div class="row">
+        <div class="col-sm title">
+            <h2>Панель администратора</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <form class="bg-poster-form" style='background-image: url("https://i.ytimg.com/vi/DbwoT5Ck6F4/maxresdefault.jpg");'>
+
+                <div class="pattern"></div>
+                <!-- Показывать на сайте -->
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="siteEnable">
+                            <label class="form-check-label" for="siteEnable">
+                                Показать на сайте
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Новинка ??? -->
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="siteNew">
+                            <label class="form-check-label" for="siteNew">
+                                Новинка ???
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- КУПИТЬ -->
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="siteBuy">
+                            <label class="form-check-label" for="siteBuy">
+                                Показать кнопки покупки билетов
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Заголовок -->
+                <div class="form-group">
+                    <label for="siteTitle">Название</label>
+                    <input type="text" class="form-control" id="siteTitle" placeholder="Название">
+                </div>
+
+                <!-- Рейтинг -->
+                <div class="form-group">
+                    <label for="siteRating">Рейтинг</label>
+                    <input type="number" class="form-control" id="siteRating" placeholder="Рейтинг">
+                </div>
+
+                <!-- Возраст -->
+                <div class="form-group">
+                    <label for="siteAge">Возраст (Только 0, 6, 10, 12, 16, 18)</label>
+                    <input type="number" class="form-control" id="siteAge" placeholder="0, 6, 10, 12, 16, 18">
+                </div>
+
+                <!-- Дата начала показа -->
+                <div class="form-group">
+                    <label for="siteStartdate">Дата начала показа</label>
+                    <input type="date" class="form-control" id="siteStartdate" placeholder="Дата начала показа">
+                </div>
+
+
+                <!-- watched -->
+                <!--
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="siteWatched">
+                            <label class="form-check-label" for="siteWatched">
+                                watched
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <!-- hasWatched -->
+                <!--
+                <div class="form-group row">
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="siteHasWatched">
+                            <label class="form-check-label" for="siteHasWatched">
+                                hasWatched
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                -->
+
+                <!-- Время показа -->
+                <div class="form-group">
+                    <label for="siteTimeView">Время показа</label>
+                    <input type="text" class="form-control" id="siteTimeView" placeholder="10:00, 11:00, 12:00">
+                </div>
+
+                <!-- Продолжительность -->
+                <div class="form-group">
+                    <label for="siteRuntime">Продолжительность в мин</label>
+                    <input type="number" class="form-control" id="siteRuntime" placeholder="Продолжительность в мин">
+                </div>
+
+                <!-- Постер -->
+                <div class="form-group">
+                    <label for="siteBackground">Постер</label>
+                    <input type="text" class="form-control" id="siteBackground" placeholder="Ссылка на постер">
+                </div>
+
+                <!-- Описание -->
+                <div class="form-group">
+                    <label for="siteSynopsis">Описание</label>
+                    <textarea class="form-control" id="siteSynopsis" rows="3" placeholder="Описание"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+            </form>
+        </div>
+
+        <div class="col-sm">
+            One of three columns
+        </div>
+        <div class="col-sm">
+            One of three columns
+        </div>
+    </div>
+</div>
+
+
+<!-- Заглушка -->
+<div class="splice"></div>
+<!-- Заглушка -->
+
+<!-- particles.js container -->
+<div id="particles-js"></div>
+<!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="js/particles-js.js"></script>
+</body>
+</html>
